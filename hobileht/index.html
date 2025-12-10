@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumira</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- header-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Tooted</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Meist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Tiim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Arvustused</a>
+                    </li>
+                </ul>
+
+                <a class="navbar-brand fw-bold fs-3 text-center d-none d-lg-block" href="#" style="font-family: 'Bauhaus', sans-serif;">Lumira</a>
+                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logi sisse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ostukorv (0)</a>
+                    </li>
+                 </ul>
+        </div>
+        <a class="navbar-brand fw-bold fs-3 d-lg-none" href="#" style="font-family: 'Bauhaus', sans-serif;">Lumira</a>
+     </div>
+    </nav>
+</header>
+
+<!-- hero -->
+ <section class="hero d-flex align-items-center justify-content-center">
+    <h1 class="hero-logo text-white text-center">Lumira</h1>
+ </section>
+<div id="hero"></div>
+<main>
+
+    <!-- intro -->
+    <section class="intro">
+        <div class="intro-image"></div>
+        <div class="intro-content">
+            <h2>Looduslik hoolitsus sinu parimale sõbrale</h2>
+            <p>
+                Lumira hooldab sinu lemmiku nahka ja karvastikku õrnalt, loodulikult ning efektiivselt -
+                ilma ülearuste kemikaalideta. Meie missioon on tagada, et iga koer ja kass tunneks end hästi, karv säraks ja nahk oleks terve.
+            </p>
+            <div class="features">
+                <div class="feature-icon icon-leaf"></div>
+                <div class="feature-icon icon-drop"></div>
+                <div class="feature-icon icon-rabbit"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- top sektsioon -->
+    <section class="top-products" id="products">
+        <h2 class="tp-title">Meet the magic of gentle care</h2>
+        <p class="tp-subtitle">
+Hooldus, mis paneb su lemmiku karva särama ja naha tervena püsima. Tutvu klientide lemmiktoodetega ja leia enda lemmik!</p>
+        <div class="tp-grid">
+            <div class="tp-card">
+                <div class="tp-bg tp-bg-1"></div>
+                <span class="tp-sale">Sale 5%</span>
+                <img src="images/purus1.png" alt="Toode 1" class="tp-img">
+                <div class="tp-content-wrap">
+                    <h3>Natural Dog Shampoo</h3>
+                    <p class="tp-desc">Looduslik šampoon koertele, mis puhastab õrnalt ja tõhusal, jättes karva pehmeks ja läikivaks.</p>
+                    <p class="tp-price">€18.00</p>
+                </div>
+                <button class="tp-btn">Lisa korvi</button>
+            </div>
+            <div class="tp-card">
+                <div class="tp-bg tp-bg-2"></div>
+                <span class="tp-sale">Sale 11%</span>
+                <img src="images/purus2.png" alt="Toode 2" class="tp-img">
+                <div class="tp-content-wrap">
+                    <h3>Leave-In Conditioner</h3>
+                    <p class="tp-desc">Looduslik palsam sissejäetav palsam, mis niisutab ja kaitseb karva.</p>
+                    <p class="tp-price">€15.00</p>
+                </div>
+                <button class="tp-btn">Lisa korvi</button>
+            </div>
+            <div class="tp-card">
+                <div class="tp-bg tp-bg-3"></div>
+                <span class="tp-sale">Sale 10%</span>
+                <img src="images/purus4.png" alt="Toode 3" class="tp-img">
+                <div class="tp-content-wrap">
+                    <h3>Natural Ear Cleaner</h3>
+                    <p class="tp-desc">Looduslik kõrvade puhastusvahend, mis aitab eemaldada mustuse.</p>
+                    <p class="tp-price">€9.00</p>
+                </div>
+                <button class="tp-btn">Lisa korvi</button>
+            </div>
+        </div>
+        <a href="#" onclick="return false;" class="view-all-products-link">
+            Vaata kõiki tooteid <i class="fas fa-arrow-right"></i>
+        </a>
+    </section>
+
+    <!-- meist sektsioon -->
+    <section class="about-section" id="about">
+        <h2 class="about-title">Me usume, et iga saba väärib sära</h2>
+        <p class="about-text">
+            Lumira on loodud armastusest loomade vastu. Meie missioon on pakkuda su lemmikule pehmet, läikivat karva ja terve nahka iga päev. Iga toode on hoolikalt koostatud koostöös loomaarstide ja professionaalsete groomeritega, kasutades ainult õrnu, taimseid koostisosi. Me usume, et loomulik hooldus võib olla sama tõhus kui turvaline ja mõnus – meie tooted aitavad ennetada nahaärritusi, säilitada karva loomuliku ilu ning muuta iga pesurituaali stressivabaks ja rõõmsaks.
+        </p>
+    </section>
+
+    <!-- tiimi sektsioon -->
+    <section class="team-new" id="team">
+        <p class="team-badge">Meie eksperdid</p>
+        <h2 class="team-heading">Tutvu Lumira tiimiga!</h2>
+        <div class="team-cards">
+            <div class="team-card">
+                <img src="images/laura1.jpg" alt="Laura Kask">
+                <h3>Laura Kask</h3>
+                <p class="role">Asutaja / Loomaarst</p>
+            </div>
+            <div class="team-card">
+                <img src="images/maria1.jpg" alt="Maria Saar">
+                <h3>Maria Saar</h3>
+                <p class="role">Tootearenduse juht</p>
+            </div>
+            <div class="team-card">
+                <img src="images/kertu1.jpg" alt="Kertu Aun">
+                <h3>Kertu Aun</h3>
+                <p class="role">Turundus- ja brändijuht</p>
+            </div>
+            <div class="team-card">
+                <img src="images/kadi2.jpg" alt="Kadi Lill">
+                <h3>Kadi Lill</h3>
+                <p class="role">Kliendisuhete haldur</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial sektsioon -->
+    <section class="testimonial-modern" id="testimonials">
+        <div class="testimonial-header">
+            <div class="rating-line">★★★★★ <span>3,000+ arvustust</span></div>
+            <h2 class="testimonial-title">Lemmikute lemmik! Heaks kiidetud loomaarstide ja lemmikloomaomanike poolt.</h2>
+            <p class="testimonial-sub">
+                Meid usaldavad tuhanded lemmikloomade omanikud. Loe, mida päris koera- ja kassivanemad meie toodete kohta ütlevad.
+            </p>
+        </div>
+
+        <div class="testimonial-content">
+            <div class="testimonial-cards">
+                <article class="t-card">
+                    <p class="quote">“Lumira tooted muutsid meie kassi karvkatte pehmeks ja tervemaks. Soovitan soojalt!”</p>
+                    <div class="t-author">
+                        <img class="t-avatar" src="images/avatar1.jpg" alt="Kliendi pilt">
+                        <div class="author-meta">
+                            <h4>Anna Mägi</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="t-card">
+                    <p class="quote">“Kiire kohaletoimetus ja toode tegi imet — meie koera nahk on rahulikum ja ta sügab end vähem. Olen väga rahul!!”</p>
+                    <div class="t-author">
+                        <img class="t-avatar" src="images/avatar2.jpg" alt="Kliendi pilt">
+                        <div class="author-meta">
+                            <h4>Markus Tamm</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="t-card">
+                    <p class="quote">“Lemmiku karv on alates Lumira toodete kasutamisest palju läikivam ja pehmem. Minu jaoks on väga oluline, et lemmiklooma tooted oleksid looduslikud ja ilma igasuguste tugevate lõhnadeta — väga rahul!”</p>
+                    <div class="t-author">
+                        <img class="t-avatar" src="images/avatar3.jpg" alt="Kliendi pilt">
+                        <div class="author-meta">
+                            <h4>Liis Saar</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="testimonial-image-wrap">
+                <img class="testimonial-image" src="images/testimonial.jpg" alt="Naeratav klient koos lemmikuga">
+            </div>
+        </div>
+        <div class="see-more">Vaata kõiki arvustusi →</div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter">
+        <div class="newsletter-wrapper">
+            <div class="newsletter-image">
+                <img src="images/corki.jpg" alt="Corki koer" />
+            </div>
+            <div class="newsletter-content">
+                <h2>Liitu meie uudiskirjaga</h2>
+                <p>Saa 10% allahindlust esimeselt ostult!</p>
+                <form class="newsletter-form">
+                    <input type="text" placeholder="Sisesta oma nimi" />
+                    <input type="email" placeholder="Sisesta oma e-post" />
+                    <button type="submit">Liitu</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <a class="navbar-brand fw-bold fs-3" href="#" style="font-family: 'Bauhaus', sans-serif;">Lumira</a>
+            <p>Looduslik hoolitsus sinu parimale sõbrale</p>
+        </div>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>Kiirlingid</h4>
+                <ul>
+                    <li><a href="#about">Meist</a></li>
+                    <li><a href="#testimonials">Arvustused</a></li>
+                    <li><a href="/kkk">KKK</a></li> 
+                    <li><a href="/kontakt">Kontakt</a></li> 
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Tooted</h4>
+                <ul>
+                    <li><a href="#products">Kõik Tooted</a></li>
+                    <li><a href="/tooted/sampoonid">Šampoonid</a></li>
+                    <li><a href="/tooted/palsamid">Palsamid</a></li>
+                    <li><a href="/tooted/tarvikud">Hooldustarvikud</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Klienditugi</h4>
+                <ul>
+                    <li><a href="/kasutustingimused">Kasutustingimused</a></li>
+                    <li><a href="/privaatsuspoliitika">Privaatsuspoliitika</a></li>
+                    <li><a href="/tagastuspoliitika">Tagastuspoliitika</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-social-newsletter">
+                <h4>Jälgi meid ka sotsiaalmeedias!</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com/lumira" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/lumira" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@lumira" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    
+                </div>
+                <h4>Uudiskiri</h4>
+                <p>Liitu, et saada parimad pakkumised!</p>
+                <form action="/subscribe" method="post" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Sinu e-post" required>
+                    <button type="submit">Liitu</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lumira. Kõik õigused kaitstud.</p>
+            <div class="payment-methods">
+                <img src="images/visa.png" alt="Visa">
+                <img src="images/mastercard.png" alt="Mastercard">
+                <img src="images/paypal.png" alt="PayPal">
+                <img src="images/swedbank.png" alt="Swedbank">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<footer>
+</footer>
+</html>
